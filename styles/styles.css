@@ -4,7 +4,7 @@
     text-align: center;
     padding: 4rem;
 
-    display: none;
+    /* display: none; */
 }
 
 
@@ -14,10 +14,9 @@
 
 }
 
-
 .unhideHero--section {
     width: 100%;
-    animation: slide-down backwards alternate 500ms;
+    animation: slide-down backwards alternate 300ms;
 }
 
 @keyframes slide-down {
@@ -71,17 +70,26 @@
     margin-right: 1.5rem;
 }
 
+/*  image styling  below*/
+.illustration--con {
+    margin-top: 2rem
+}
+
+img {
+    width: 1100px;
+    margin: 0 auto;
+}
 
 /* The below styling is for the main function */
 #validator--wrapper {
     position: relative;
     display: flex;
     gap: 0.3rem;
-    padding: 6rem 2rem;
+    padding: 4rem 2rem;
     min-height: 100vh;
-    /* display: none; */
+    display: none;
     /* border: 2px solid lemonchiffon; */
-    animation: slide-up forwards alternate 400ms;
+    animation: slide-up forwards alternate 300ms;
 }
 
 /* .slide-validatorWrapper {
@@ -93,13 +101,13 @@
 
     to {
         transform: translateY(0%);
-        /* display: none; */
+
     }
 }
 
 .texts--wrapper--block,
 .validate--result--wrapper--block {
-    padding: 2rem 2rem;
+    padding: 2rem 1rem;
     width: 100%;
     height: auto;
     /* border: 1px solid red; */
@@ -109,7 +117,7 @@
 }
 
 .texts--con {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     height: 350px;
 }
 
@@ -120,13 +128,12 @@
     font-size: 14px;
     word-wrap: break-word;
     word-break: break-all;
-
+    scrollbar-width: none;
 }
-
 
 .keywords--con {
     margin-top: 1rem;
-    height: 120px;
+    height: 100px;
 }
 
 .keywords--con>textarea {
@@ -137,13 +144,12 @@
 }
 
 /* Validate block styling starts here */
-
-
 .validator--btn--con {
     margin-top: 1rem;
-    height: 100px;
+    height: max-content;
     display: flex;
     align-items: center;
+    /* border: 2px solid red; */
 }
 
 .validator--btn--con>button {
@@ -159,18 +165,19 @@
 
 .validate--result {
     width: 100%;
-    height: 400px;
+    height: 350px;
     overflow: auto;
     word-break: break-all;
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    scrollbar-width: none;
 }
 
 .options--result--con {
     width: 100%;
-    height: 150px;
+    height: 120px;
     max-height: max-contents;
-    border: 2px solid red;
-    margin-top: 1rem;
+    /* border: 2px solid red; */
+    margin-top: 3rem;
 }
 
 /* Styling for the homepage redirect link */

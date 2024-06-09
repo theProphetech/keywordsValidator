@@ -39,7 +39,9 @@ body {
     /* overflow: hidden; */
 }
 
-
+img {
+    display: block;
+}
 
 button {
     cursor: pointer;
