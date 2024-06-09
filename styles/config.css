@@ -1,0 +1,67 @@
+:root {
+    --text--clr: hsla(0, 10%, 78%, 1);
+    --web--bg: hsla(220, 30%, 10%, 1);
+    --normal--font: 14px;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    font-family: "poppins";
+    outline: none;
+    --normal--font: 14px;
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url(/assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: "poetsen";
+    src: url(/assets/fonts/Poetsen_One/Poetsen_One/PoetsenOne-Regular.ttf);
+}
+
+body {
+    /* border: 1px solid red; */
+    width: 100%;
+    min-height: 100vh;
+    color: var(--text--clr);
+    background-color: var(--web--bg);
+    font-size: var(--normal--font);
+    /* overflow: hidden; */
+}
+
+
+
+button {
+    cursor: pointer;
+    padding: 0.8rem 2rem;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: bolder;
+    color: hsla(190, 60%, 75%, 1);
+    font-family: "poppins";
+    letter-spacing: 1px;
+}
+
+textarea {
+    /* border: 1px solid red; */
+    background: hsla(0, 0%, 10%, 1);
+    resize: none;
+    border-radius: 5px;
+    color: var(--text--clr);
+    padding: 1rem;
+}
+
+/* scrollbar styling */
+body::-webkit-scrollbar {
+    display: none;
+}
